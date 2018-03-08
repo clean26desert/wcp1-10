@@ -7,10 +7,6 @@
 }
 
 
-a {
-	text-decoration: none;
-}
-
 /* floatによる回り込み回避 */
 .clearfix::after {
 	content: "";
@@ -18,281 +14,395 @@ a {
 	clear: both;
 }
 
-header, nav, h2, .main-visual, footer {
-	font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
-}
-
 header {
-	position: relative;
-	width: 90%;
-	padding: 15px 0;
+	height: 70px;
+	background-color: #EC715F;
+}
+
+.header-board {
+	width: 1024px;
 	margin: 0 auto;
-	text-align: center;
 }
 
-/* headerタグ内のheadlineクラスにのみ反映される */
-header .headline{
-	font-size: 32px;
-}
-
-.social {
-	position: absolute; /* .headerの左上を基準に位置を指定 */
-	top: 22px; /* .headerの上から22px下に移動 */
-	right: 22px; /* .headerの右から22px左に移動 */
-}
-
-.social i {
-	display: inline-block;
-	margin-left: 20px;
+.header-img {
+	height: 60px;
+	float: left;
 }
 
 .nav-list {
-	text-align: center;
-	padding: 10px 0;
-	margin: 0 auto;
+	text-align: right;
 }
 
 .nav-list-item {
 	list-style: none;
 	display: inline-block;
-	margin: 0 20px;
+	margin: 22px 30px 0 30px;
+	font-size: 16px;
+	color: #FAFAFA;
 }
 
 .main-visual {
-	width: 100%;/* 横幅 */
-	height: 300px;/* 高さ */
-	background-image: url(img/mv.jpg);
-	background-size: cover;/* 縦横比維持で背景の表示領域を覆う */
-	background-position: center;/* 背景画像を中央に配置 */
-}
-
-.main-visual-content {
-	width: 40%;
-	height: 300px;
-	background-color: rgba(0, 0, 0, 0.5);
-	text-align: center;
-	padding-top: 105px;/* 上部border内側の余白で位置調整 */
-}
-
-.main-visual-text {
-	color: #fff;
-}
-
-.main-visual-name {
-	margin-top: 30px;/* 上部border外側の余白 */
-	color: #fff;
-}
-
-main {
-	width: 800px;/* 横幅 */
-	margin: 0 auto; /* 余白がある場合に限り中央寄せ */
-	padding: 70px 0; /* 上下70pxでborder内側に余白 */
-}
-
-.blog {
-	width: 540px;
-	float: left;/* 要素を左揃えで並べる */
-	margin-right: 30px;
-}
-
-.blog-headline {
-	border-bottom: 8px solid #f7f7f7;
-	text-align: center;
-	line-height: 0.6;
-}
-
-.blog-box {
-	padding-top: 50px;
-}
-
-.blog-item {
-	padding-bottom: 20px;
-	margin-bottom: 20px;
-	border-bottom: 1px solid #f7f7f7;
-}
-
-.blog-image{
-	height: 180px;
-	float: left;
-}
-
-.blog-text-headline {
-	padding-bottom: 15px;
-}
-
-.blog-text{
-	padding: 30px 0 0 25px;
-	float: left;
-}
-
-.blog-date{
-	display: inline-block;
-	font-size: 12px;
-}
-
-.category {
-	display: inline-block;
-	padding: 5px 8px;
-	background-color: #acabab;
-	border-radius: 3px;
-	color: #fff;
-	font-size: 11px;
-}
-
-.pagination {
-	text-align: center;
-	padding-top: 50px;
-}
-
-.pagination p {
-	width: 30px;
-	height: 30px;
-	display: inline-block;
-	color: white;
-	background-color: #acabab;
-	border-radius: 3px;
-	margin: 0 5px 0 5px;
-	line-height: 30px;
-}
-
-.sidebar {
-	width: 230px;
-	float: left;/* 要素を左揃えで並べる */
-}
-
-.sidebar-headline, .instagram-headline, .categories-headline {
-	border-bottom: 8px solid #f7f7f7;
-	text-align: center;
-	line-height: 0.6;
-}
-
-.sider-contents {
-	padding: 50px 0;
-}
-
-.popular-text, .categories-text{
-	padding-bottom: 5px;
-	border-bottom: 1px solid #f7f7f7;
-	margin-bottom: 5px;
-}
-
-.popular-text:last-child, .categories-text:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
-}
-
-.instagram-box {
-	float: left;
-	width: 110px;
-	padding-top: 110px;
+	height: 650px;
+	background-image: url(img/mv.png);
 	background-size: cover;
 	background-position: center;
 }
 
-.instagram-box:nth-child(odd) {
-	margin: 0 10px 10px 0;
+.main-visual-text {
+	padding-top: 200px;
+	text-align: center;
 }
 
-.instagram-box:nth-child(1) {
-	background-image: url(img/airport.jpg);
+.main-visual-title {
+	font-size: 64px;
+	color: #FAFAFA;
 }
 
-.instagram-box:nth-child(2) {
-	background-image: url(img/japan.jpg);
+.main-visual-subtitle {
+	margin-top: 10px;
+	font-size: 20px;
+	color: #FAFAFA;
 }
 
-.instagram-box:nth-child(3) {
-	background-image: url(img/snow.jpg);
+main {
+	margin: 0 auto;
 }
 
-.instagram-box:nth-child(4) {
-	background-image: url(img/japan2.jpg);
+.main-board{
+	background-color: #ECEFF1;
 }
 
-.instagram-box:nth-child(5) {
-	background-image: url(img/lake.jpg);
+.main-board:nth-child(even){
+	background-color: white;
 }
 
-.instagram-box:nth-child(6) {
-	background-image: url(img/road.jpg);
+.portfolio {
+	width: 920px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.headline {
+	font-size: 32px;
+	color: #000000;
+	padding-bottom: 8px;
+}
+
+.line {
+	width: 70px;
+	height: 3px;
+	background-color: #EC715F;
+	margin: 0 auto;
+}
+
+.content {
+	padding-top: 30px;
+	font-size: 16px;
+	color: #000000;
+}
+
+.text {
+	padding-top: 30px;
+}
+
+.portfolio-box {
+	float: left;
+	width: 300px;
+	height: 250px;
+	background-size: cover;
+	background-position: center;
+}
+
+.portfolio-box:nth-child(1) {
+	background-image: url(img/sketch.jpg);
+	margin: 0 0 10px 0;
+}
+
+.portfolio-box:nth-child(2) {
+	background-image: url(img/websuku.png);
+	margin: 0 10px 10px 10px;
+}
+
+.portfolio-box:nth-child(3) {
+	background-image: url(img/write.jpg);
+	margin: 0 0 10px 0;
+}
+
+.portfolio-box:nth-child(4) {
+	background-image: url(img/webcamp.png);
+}
+
+.portfolio-box:nth-child(5) {
+	background-image: url(img/talk.jpg);
+	margin: 0 10px 0 10px;
+}
+
+.portfolio-box:nth-child(6) {
+	background-image: url(img/webcamp-mother.png);
+}
+
+.feature {
+	width: 980px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.strength1, .strength2, .strength3 {
+	float: left;
+}
+
+.strength2 {
+	margin: 0 10px 0 10px;
+}
+
+.strength-image i {
+	font-size: 60px;
+	color: #000000;
+}
+
+.strength-content {
+	padding: 10px 0;
+	font-size: 20px;
+	color: #000000;
+}
+
+.strength-text {
+	text-align: left;
+	font-size: 16px;
+	color: #000000;
+}
+
+.profile {
+	width: 1024px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.profile-left, .profile-right{
+	width: 50%;
+	float: left;
+}
+
+.profile-image {
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	background-image: url(img/my-icon.jpg);
+}
+
+.profile-content {
+	padding-bottom: 5px;
+	font-size: 20px;
+	color: #000000;
+	text-align: left;
+}
+
+.profile-text {
+	padding-bottom: 8px;
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+}
+
+.contact {
+	width: 800px;
+	margin: 0 auto;
+	padding: 90px 0;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+	display: inline-block;
+}
+
+.contact-text {
+	font-size: 16px;
+	color: #000000;
+	text-align: left;
+	text-decoration: underline;
+}
+
+.down20 {
+	padding-bottom: 20px;
+}
+
+.wide190 {
+	width: 190px;
+}
+
+.wide20 {
+	padding: 0 20px;
+}
+
+.contact-image i {
+	float: left;
+	text-align: left;
+	font-size: 50px;
+	color: #000000;
 }
 
 footer {
+	height: 60px;
 	text-align: center;
-	padding: 50px 0;
-	background-color: #848282;
+	background-color: #EC715F;
 }
 
 .footer-text {
+	font-size: 16px;
 	color: #fff;
+	padding: 15px 0;
 }
 
 @media screen and (max-width:768px) {
-  header {
-  	width: 100%;
-  }
+	html {
+		padding:0 5%;
+	}
 
-  .nav-list {
-  	width: 100%;
-  }
+	header {
+		height: 50px;
+		background-color: #EC715F;
+	}
 
-  .nav-list-item {
-  	width: 100%;
-  	margin: 0 0 10px 0;
-  }
+	.header-board {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
 
-  .social {
-  	display: none;
-  }
+	.header-img {
+		height: 50px;
+		float: left;
+	}
 
-  .main-visual-content {
-  	width: 100%;
-  }
+	.nav-list {
+		display: none;
+	}
 
-  main {
-  	width: 100%;
-  }
+	.hamb {
+		width: 42px;
+		height: 42px;
+		background-size: cover;
+		background-position: center;
+		background-image: url(img/hamb.png);
+		margin: 3px 0;
+		border: solid 1px #fff;
+		position: absolute;
+		right: 8px;
+	}
 
-  .blog {
-  	width: 100%;
-  	margin: 0;
-  }
+	.main-visual {
+		height: 750px;
+		background-image: url(img/code.png);
+		background-size: cover;
+		background-position: center;
+	}
 
-  .blog-box {
-  	padding-left: 2%;
-  	padding-right: 2%;
-  }
+	.main-visual-title {
+		font-size: 40px;
+		color: #FAFAFA;
+	}
 
-  .blog-image {
-  	width: 49%;
-  }
+	.main-visual-subtitle {
+		margin-top: 10px;
+		font-size: 18px;
+		color: #FAFAFA;
+	}
 
-  .blog-text {
-  	width: 49%;
-  	padding-top: 5px;
-  }
+	.portfolio {
+		width: 100%;
+		margin: 0 auto;
+		padding: 90px 0;
+		text-align: center;
+	}
 
-.category {
-	display: none;
-}
+	.portfolio-box {
+		float: none;
+		width: 300px;
+		height: 250px;
+		margin: 0 auto;
+		background-size: cover;
+	}
 
-  .sidebar {
-  	width: 100%;
-  	padding-left: 3%;
-  	padding-right: 3%;
-  }
+	.portfolio-box:nth-child(odd) {
+		display: none;
+	}
 
-  .instagram-box {
-  	width: 48%;
-  	padding-top: 48%;
-  }
+	.portfolio-box:nth-child(2) {
+		background-image: url(img/websuku.png);
+		margin: 0 0 10px 0;
+	}
 
-  .instagram-box:nth-child(odd) {
-  	margin-right: 4%;
-  }
+	.portfolio-box:nth-child(4) {
+		background-image: url(img/webcamp.png);
+		margin-bottom: 10px;
+	}
 
-  .pagination {
-  	margin-bottom: 50px;
-  }
+	.feature {
+		width: 100%;
+		margin: 0 auto;
+		padding: 90px 0;
+		text-align: center;
+	}
+
+	.profile {
+		width: 100%;
+		margin: 0 auto;
+		padding: 90px 0;
+		text-align: center;
+	}
+
+	.contact {
+		width: 100%;
+		margin: 0 auto;
+		padding: 90px 0;
+		text-align: center;
+	}
+
+	.strength1, .strength2, .strength3 {
+		float: none;
+	}
+
+	.strength1, .strength2 {
+		margin-bottom: 10px;
+	}
+
+	.strength-text:last-child{
+		text-align: center;
+	}
+
+	.profile-left, .profile-right{
+		width: 100%;
+		float: none;
+	}
+
+	.profile-image {
+		margin-bottom: 20px;
+	}
+
+	.profile-content, .profile-text {
+		text-align: center;
+	}
+
+	.contact-text:last-child {
+		padding-bottom: 20px;
+	}
+
+	.wide190 {
+		width: 28%;
+		margin: 0 auto;
+	}
+
+	.contact-image i {
+	}
+
+	.wide20 {
+		padding: 0 8px;
+	}
 }
