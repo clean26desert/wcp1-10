@@ -274,7 +274,7 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-	body {
+	header, .main-visual, .main-board, .footer-text {
 		padding:0 5%;
 	}
 
